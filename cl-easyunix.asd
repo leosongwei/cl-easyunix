@@ -12,14 +12,14 @@
 ;
 ;  0. You just DO WHAT THE FUCK YOU WANT TO.
 
-(defpackage :cl-easyunix
-  (:nicknames :eu)
+(defpackage :cl-easyunix-system
   (:use :cl :asdf))
-(in-package :cl-easyunix)
+(in-package :cl-easyunix-system)
 
 (defsystem :cl-easyunix
-  :description "cl-easyunix: provide a set of simple unix function interface as easy as using bash shell."
+  :description
+  "cl-easyunix: provide a set of simple unix function interface as easy as using bash shell."
   :version "0.0"
   :author "Leo Song <leo_songwei@126.com>"
   :license "WTFPL"
-  :components ((:file "main.lisp")))
+  :components ((:file "easyunix")))
