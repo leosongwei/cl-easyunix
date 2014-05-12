@@ -24,8 +24,8 @@ For now, CL-EASYUNIX has functions below:
 (ls #p"/home")
 ```
 
-* cat-&lt;
-* cat-&lt;&lt;
+* cat->
+* cat->>
 ```lisp
 (cat-> "string" #p"filename") ;>, Supersed
 (cat->> "string" #p"filename") ;>>, Append
